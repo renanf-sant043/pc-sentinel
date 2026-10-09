@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#111827">
+
+    <title>PC Monitor</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="header">
+            <div>
+                <h1>PC Monitor</h1>
+                <p>Monitoramento do computador</p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </header>
+
+
+        <section class="computer-card">
+
+            <div class="computer-info">
+                <span class="computer-icon">💻</span>
+
+                <div>
+                    <h2>Meu Computador</h2>
+                    <p>Windows 11</p>
+                </div>
+            </div>
+
+            <p class="last-update">
+                Atualizado agora
+            </p>
+
+        </section>
+
+
+        <section class="metrics">
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span>CPU</span>
+                    <strong id="cpu-value">47%</strong>
+                </div>
+
+                <div class="progress">
+                    <div id="cpu-bar" class="progress-bar"></div>
+                </div>
+
+                <p>Uso do processador</p>
+            </div>
+
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span>RAM</span>
+                    <strong id="ram-value">62%</strong>
+                </div>
+
+                <div class="progress">
+                    <div id="ram-bar" class="progress-bar"></div>
+                </div>
+
+                <p>Memória utilizada</p>
+            </div>
+
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span>GPU</span>
+                    <strong id="gpu-value">38%</strong>
+                </div>
+
+                <div class="progress">
+                    <div id="gpu-bar" class="progress-bar"></div>
+                </div>
+
+                <p>Uso da placa de vídeo</p>
+            </div>
+
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span>Disco</span>
+                    <strong id="disk-value">71%</strong>
+                </div>
+
+                <div class="progress">
+                    <div id="disk-bar" class="progress-bar"></div>
+                </div>
+
+                <p>Armazenamento utilizado</p>
+            </div>
+
+        </section>
+
+
+        <section class="details">
+
+            <h2>Informações</h2>
+
+            <div class="details-grid">
+
+                <div>
+                    <span>🌡️ Temperatura</span>
+                    <strong id="temperature">54 °C</strong>
+                </div>
+
+                <div>
+                    <span>💾 Espaço livre</span>
+                    <strong id="storage">290 GB</strong>
+                </div>
+
+                <div>
+                    <span>⏱️ Tempo ligado</span>
+                    <strong id="uptime">4h 32min</strong>
+                </div>
+
+                <div>
+                    <span>🌐 Rede</span>
+                    <strong id="network">125 Mbps</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <button id="refresh-button" class="refresh-button">
+            Atualizar dados
+        </button>
+
+        <footer>
+            <p>PC Monitor • Projeto escolar</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
